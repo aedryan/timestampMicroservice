@@ -1,9 +1,12 @@
 var express = require('express')
 var app = express()
 
-app.get('/:timestamp', function (req, res) {
-    console.log("Hello");
+app.set('port', (process.env.PORT || 5000));
+
+app.get('/:timestamp', (req, res) => {
     document.body.innerHTML = req.params;
 });
 
-app.listen(3000)
+app.listen(app.get('port'), () => {
+    console.log("App is running", app.get('port'));
+});

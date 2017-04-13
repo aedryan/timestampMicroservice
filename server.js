@@ -4,7 +4,7 @@ var app = express()
 app.set('port', (process.env.PORT || 5000));
 
 app.get('/:timestamp', (req, res) => {
-    document.body.innerHTML = req.params;
+    window.document.body.innerHTML = req.params;
 });
 
 app.listen(app.get('port'), () => {

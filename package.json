@@ -1,14 +1,26 @@
 {
   "name": "timestampmicroservice",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "My implementation of freeCodeCamp's Timestamp Microserver",
+  "engines": {
+    "node": "6.9.4"
+  },
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aedryan/timestampMicroservice"
+  },
+  "author": "Andrew Cox",
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.2"
-  }
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ]
 }
